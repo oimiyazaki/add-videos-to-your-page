@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>My Webpage Notes - Stage 3</title>
+	<link rel="stylesheet" type="text/css" href="lecture-notes.css">
+</head>
+<body>
+	<div> <!-- Start Lecutre notes start -->
+		<h1>Stage 3: Lecture Notes</h1>
+		<div class="lecture"> <!-- Start Lecture 1 -->
+			<h2 id="lecture-1">Lecture 1: Use Functions</h2>
+				<div class="concept">
+					<h3>Launching Python</h3>	
+					<p>
+						Open IDLE
+						Click File, then new file
+					</p>
+					<p>
+						Reading Webbrowser Documentation<br>
+						Abstraction is how a program interprets code, and then does things in the background to execute it. 
+					</p>
+					<p>
+						The definition from whatis.techtarger:<br>
+						In object-oriented programming, abstraction is one of three central principles (along with encapsulation and inheritance). Through the process of abstraction, a programmer hides all but the relevant data about an object in order to reduce complexity and increase efficiency.
+					</p>
+				</div>
+				<div class="concept">
+					<h3>Reading Webbrowser Documentation</h3>	
+					<p>
+						Find documentation by Googling, Python standard library
+					</p> 
+
+					<p>
+						Make sure you are reading the library for your right version.
+					</p>
+				</div>
+		</div>
+
+		<div class="lecture"> <!-- Start Lecture 2 -->
+			<h2 id="lecture-2">Lecture 2: Use Classes: Draw Turtle</h2>
+				<div class="concept">
+					<h3>What is a class?</h3>	
+					<p>
+						A class is like a blue print for an instance. <br>
+
+						"A class Turtle, much like a blueprint, contains certain pieces of information about a turtle: the turtle's size, its color, the fact that the Turtle can move forward..."
+					</p>
+				</div>
+				<div class="concept">
+					<h3>They Look Similar (not all functions are created equal)</h3>
+					<p>
+						Calling webbrowser.open() is not the same as turtle.Turle()<br>
+
+						When we call turtle.turcle we called for a function inside turtle that create space in memory.
+					</p>
+				</div>
+		</div>
+		<div class="lecture"> <!-- Start Lecture 3 -->
+			<h2 id="lecture-3">Lecture 3: Use Classes: Send text</h2>
+				<div class="concept">
+					<h3>Introducing Twilio</h3>	
+					<p>
+						Twilio is one of thousands of python packages that is not included in the python library. 
+					</p>
+				</div>
+				<div class="concept">
+					<h3>How to install a python package (Twilio)</h3>	
+					<p>
+						http://www.wikihow.com/Install-Python-Packages-on-Windows-7
+					</p>
+				</div>
+				<div class="concept">
+					<h3>Python Keyword: from</h3>	
+					<p>
+						Python's from statement lets you import specific attributes from a module into the current namespace. The from...import has the following syntax:
+					</p>
+					<p>
+						from fib import fibonacci
+					</p>
+					<p>
+						Source: http://www.tutorialspoint.com/python/python_modules.htm
+					</p>
+				</div>
+				<div class="concept">
+					<h3>Where Does Twilio Come From?</h3>	
+					<p>
+						With brad = turtle.Turle(), we say inside of python there is a file called turtle. And inside that file, is a class called called Turrle. And when we try to access that class using the () statement, we are actually calling in init function defined inside the class. What the init function does is initializes or creates space in memory for a new instance, which  we called brad. Brad is an object or instance of the class Turtle. This instance brad can do things defined inside the class Turtle, like, move forward. 
+					</p>
+				</div>
+				<div class="concept">
+					<h3>Connecting Turtle and Twilio</h3>	
+					<p>
+						A class is like a blueprint, which have some basic information defined inside of them. And you can think of  its objects, as examples or instances, of that blue print.
+					</p>
+					<p>
+						<img src="classes.png">
+					</p>
+				</div>
+		</div>
+		
+		<div class="lecture"> <!-- Start Lecture 4 -->
+			<h2 id="lecture-4">Lecture 4: Use Classes: Profanity Editor</h2>
+<div class="concept">
+					<h3>Reading from file</h3>	
+					<p>
+						Handy functions:<br>
+						open() &lt-- opens the file like movies_quotes.txt. Inside the () add the file path inside "". <br>
+						&ltvariable>.read()  &lt-- reads the content. You don't need to add anything inside the ().
+					</p>
+					<p>
+						You can then print the contents as print &ltvariable>
+					</p>
+					<p>
+						It's handy to close the open document using &ltvariable>.close(). You don't need to add anything inside the ().
+					</p>
+				</div>
+				<div class="concept">
+					<h3>Place Function Open</h3>	
+					<p>
+						How to use open: https://docs.python.org/2/library/functions.html#open
+					</p>
+				</div>
+				<div class="concept">
+					<h3>Connecting Turtle and Open</h3>	
+					<p>
+						Open also uses a function to create an instance in time. For the example above. We create an instance or object of text, that is, movie_quotes.txt.
+					<p>
+						<img src="object_file_type.png">
+					</p> 
+					</p>
+				</div>
+				<div class="concept">
+					<h3>Connecting Turtle, Open, and Urllib</h3>	
+					<p>
+						In all of these instances, we create instances or objects in python's memory. 
+					</p>
+					<p>
+						<img src="instances_object.png">
+					</p>
+				</div>
+		</div>
+		
+		<div class="lecture"> <!-- Start Lecture 5 -->
+			<h2 id="lecture-5">Lecture 5: Make Classes: Movie Website</h2>
+				<div class="concept">
+					<h3>Defining Class Movie</h3>	
+					<p>
+						The "M" in Class Movie does not have to be capitalize, but Google suggest it should. 
+
+						Google's Python Style Guide for the web
+						http://google-styleguide.googlecode.com/svn/trunk/pyguide.html
+					</p>
+				</div>
+				<div class="concept">
+					<h3>New Vocabulary Words</h3>	
+					<p>
+						<ul>
+							<li>Class</li>
+							<li>Instance</li>
+							<li>Constructor</li>
+							<li>Self</li>
+							<li>Instance variable</li>
+							<li>Instance method</li>
+						</ul>
+					</p>
+					<p>
+						<img src="new_vocabulary.png">
+					</p>
+				</div>
+				<div class="concept">
+					<h3>Defining __init__</h3>	
+					<p>
+						__init__ create space in memory. 
+					</p>
+					<p>
+						Class &ltClassName&gt:<br>
+						     <span class="indent-lame">def __init__(self, &ltitem&gt,&ltitem&gt,&ltitem&gt):</span><br>
+						          <span class="indent-lame-x2">self.&ltitemname&gt = &ltitem&gt</span><br>
+						          <span class="indent-lame-x2">self.&ltitemname&gt = &ltitem&gt</span><br>
+						          <span class="indent-lame-x2">self.&ltitemname&gt = &ltitem&gt</span><br>
+					</p>
+					<p>
+						you always write self. 
+					</p>
+				</div>
+				<div class="concept">
+					<h3>What is going on behind the scene</h3>	
+					<p>
+						<img src="behind_the_scene.png">
+					</p>
+				</div>
+				<div class="concept">
+					<h3>Instance method</h3>	
+					<p>
+						How to create an instance method? See bold. 
+					</p>
+					<p>
+						Class &ltClassName&gt:<br>
+						     <span class="indent-lame">def __init__(self, &ltitem&gt,&ltitem&gt,&ltitem&gt):</span><br>
+						          <span class="indent-lame-x2">self.&ltitemname&gt = &ltitem&gt</span><br>
+						          <span class="indent-lame-x2">self.&ltitemname&gt = &ltitem&gt</span><br>
+						          <span class="indent-lame-x2">self.&ltitemname&gt = &ltitem&gt</span><br><br>
+
+						     <span class="indent-lame">def&ltinstancemethodname&gt(self):</span><br>
+						          <span class="indent-lame-x2">&ltblock&gt</span>
+					</p>
+					<p>
+						How to use?  Only after creating instance of class the the bold.
+					</p>
+						&ltinstancename&gt.&ltinstancemethodname&gt()<br><br>
+
+						avatar.show_trailer()
+					</p>
+				</div>
+		</div>
+		
+		<div class="lecture"> <!-- Start Lecture 6 -->
+			<h2 id="lecture-6">Lecture 6: Make Classes: Advanced Topic</h2>
+				<div class="concept">
+					<h3>Class Variables</h3>	
+					<p>
+						How to use class variables? Variables need to be outside the definition. See bold. 
+					</p>
+					<p>
+						Class &ltClassName&gt:<br>
+						     <span class="indent-lame">&ltvariable&gt = &ltitem&gt</span><br>
+						     <span class="indent-lame">def __init__(self, &ltitem&gt,&ltitem&gt,&ltitem&gt):</span><br>
+						          <span class="indent-lame-x2">self.&ltitemname&gt = &ltitem&gt</span><br>
+						          <span class="indent-lame-x2">self.&ltitemname&gt = &ltitem&gt</span><br>
+						          <span class="indent-lame-x2">self.&ltitemname&gt = &ltitem&gt</span><br><br>
+
+						     <span class="indent-lame">def&ltinstancemethodname&gt(self):</span><br>
+						          <span class="indent-lame-x2">&ltblock&gt</span>
+					</p>
+					<p>
+						to print variable do: <br>
+						&ltfilename&gt.&ltclassname&gt.&ltclassvariable&gt
+					</p>
+					</p>
+						EX: media.Movie.valid_ratings
+					</p>
+					<p>
+						Google Style Guides say to make constant variables all caps. so &ltCLASSVARIABLE&gt<br>
+						EX: VALID_RATINGS
+					</p>
+				</div>
+				<div class="concept">
+					<h3>Doc Strings</h3>	
+					<p>
+						All classes come with a prepackaged with: ___doc__ that gives information about the class. It is used as follow. <br>
+						&ltfilename&gt.&ltclass&gt.__doc__
+					</p>
+					<p>
+						Add documentation to your own class by doing the following. See bold. 
+					</p>
+					<p>
+						Class &ltClassName&gt:<br>
+						    <span class="indent-lame">"""&ltinsert documentation here via comment&gt"""</span><br>
+						    <span class="indent-lame"> &ltvariable&gt = &ltitem&gt</span><br>
+						    <span class="indent-lame">def __init__(self, &ltitem&gt,&ltitem&gt,&ltitem&gt):</span><br>
+						          <span class="indent-lame-x2">self.&ltitemname&gt = &ltitem&gt</span><br>
+						          <span class="indent-lame-x2">self.&ltitemname&gt = &ltitem&gt</span><br>
+						          <span class="indent-lame-x2">self.&ltitemname&gt = &ltitem&gt</span><br><br>
+
+						    <span class="indent-lame"> def&ltinstancemethodname&gt(self):</span><br>
+						          <span class="indent-lame-x2">&ltblock&gt</span>
+					</p>
+				</div>
+				<div class="concept">
+					<h3>Using Predefined Class Variables</h3>	
+					<p>
+						http://www2.lib.uchicago.edu/keith/courses/python/class/5/
+					</p>
+				</div>
+				<div class="concept">
+					<h3>Inheritance (of classes)</h3>	
+					<p>
+						To use inheritance. You need to refer back to the parent. Then add additional items. 
+					</p>
+					<p>
+						Class &ltParentClassName&gt:<br>
+						    <span class="indent-lame">&ltvariable&gt = &ltitem&gt</span><br>
+						    <span class="indent-lame">def __init__(self, &ltitemA&gt,&ltitemB&gt):</span><br>
+						          <span class="indent-lame-x2">self.&ltitemnameA&gt = &ltitemB&gt</span><br>
+						          <span class="indent-lame-x2">self.&ltitemnameA&gt = &ltitemB&gt</span><br><br>
+
+						Class&ltChildClassName&gt:<br>
+						    <span class="indent-lame">def __init__(self, &ltitemA&gt,&ltitemB&gt,&ltitemC&gt):</span><br>
+						          <span class="indent-lame-x2">&ltParentClassName&gt.__init__(self, &ltitemA&gt, &ltitemB&gt)</span><br>
+						          <span class="indent-lame-x2">self.&ltitemnameC&gt = &ltitemC&gt</span>
+					</p>
+				</div>
+				<div class="concept">
+					<h3>[ND] Fish, Salmon, Classes, and Objects</h3>	
+					<p>
+						What is the difference between classes and objects? 
+						http://learnpythonthehardway.org/book/ex42.html
+					</p>
+				</div>
+				<div class="concept">
+					<h3>Reusing Overriding</h3>	
+					<p>
+						If you create a definition (method) inside a class parent, the child can get access to it, even though it is not explicitly called for in the child's class. 
+					</p>
+				</div>
+				<div class="concept">
+					<h3>Method Overriding</h3>	
+					<p>
+						If a definition (method) with the same name exists in both the parent and child, the child definition will run only.
+					</p>
+				</div>
+		</div>
+	<div> <!-- End Lecutre notes start -->
+
+</body>
+</html>
+
+
